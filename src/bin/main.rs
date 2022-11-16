@@ -2,9 +2,10 @@ use std::{collections::HashMap, path::Path};
 
 use tweeta::*;
 
-fn main() {
 
-    let example_bot = tweeta::new()
+
+fn main() {
+    let example_bot = Tweeta::new()
         .consumer_key(YOUR_CONSUMER_KEY)
         .consumer_secret_key(YOUR_CONSUMER_SECRET_KEY)
         .access_token(YOUR_ACCESS_TOKEN)

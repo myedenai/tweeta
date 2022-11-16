@@ -19,17 +19,17 @@ use serde::{Deserialize, Serialize};
 /// The main struct provided by this crate. See crate documentation for more
 /// information.
 #[derive(Default, Serialize, Deserialize)]
-pub struct TwitterBot {
+pub struct Tweeta {
     consumer_key: Option<String>,
     consumer_secret_key: Option<String>,
     access_token: Option<String>,
     secret_access_token: Option<String>,
 }
 
-impl TwitterBot {
+impl Tweeta {
     /// Creates a new Empty `TwitterBot`
     pub fn new() -> Self {
-        TwitterBot::default()
+        Tweeta::default()
     }
 
     /// Add your `consumer_key`<br/>  
